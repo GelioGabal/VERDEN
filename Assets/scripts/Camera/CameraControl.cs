@@ -11,12 +11,11 @@ public class CameraControl : MonoBehaviour
     private void Update()
     {
         WASDMove();
-        //MouseMove();
         zoomMove();
         transform.position = new Vector3(
-            transform.position.x,
-            Mathf.Clamp(transform.position.y, -3.99f, 60f),
-            transform.position.z);
+            Mathf.Clamp(transform.position.x, -110f, 110f),
+            Mathf.Clamp(transform.position.y, 1.5f, 20f),
+            Mathf.Clamp(transform.position.z, -111f, 117f));
     }
     public void WASDMove()
     {
@@ -31,6 +30,6 @@ public class CameraControl : MonoBehaviour
 
         transform.position += transform.up * zoomSpeed * -1 * Input.GetAxis("Mouse ScrollWheel");
 
-
+        
     }
 }

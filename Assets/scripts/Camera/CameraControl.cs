@@ -13,9 +13,9 @@ public class CameraControl : MonoBehaviour
         WASDMove();
         zoomMove();
         transform.position = new Vector3(
-            Mathf.Clamp(transform.position.x, -110f, 110f),
+            Mathf.Clamp(transform.position.x, -136f, 140f),
             Mathf.Clamp(transform.position.y, 1.5f, 20f),
-            Mathf.Clamp(transform.position.z, -111f, 117f));
+            Mathf.Clamp(transform.position.z, -164f, 117f));
     }
     public void WASDMove()
     {

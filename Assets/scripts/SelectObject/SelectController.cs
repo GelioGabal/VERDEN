@@ -22,7 +22,17 @@ public class SelectController : MonoBehaviour
 
     private void Update()
     {
-
+        if (Input.GetMouseButtonDown(1) && Units.Count > 0)
+        {
+            Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit agentTarget, 1000f, mask))
+            {
+                foreach (var el in Units)
+                {
+                    el.GetComponent<NavMeshAgent>().SetDestination(agentTarget.point);
+                }
+            }
+        }
 
         CreateSelectZone();
     }

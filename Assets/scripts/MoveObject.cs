@@ -8,8 +8,6 @@ public class MoveObject : MonoBehaviour
     public float rotateSpeed = 100f;
     private void Start()
     {
-
-        PlaceObject();
     }
     public void PlaceObject()
     {

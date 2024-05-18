@@ -1,30 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
-public class MoveObject : MonoBehaviour
+public class PlaceObject : MonoBehaviour
 {
     public LayerMask layer;
     public float rotateSpeed = 100f;
-    private void Start()
-    {
-    }
-    public void PlaceObject()
-    {
-        Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 100000f, layer))
-        {
-            transform.position = hit.point;
-        }
-    }
     private void Update()
     {
-        PlaceObject();
+        PlaceObjects();
         if (Input.GetMouseButtonDown(0))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + 10, transform.position.z);
-            Destroy(gameObject.GetComponent<MoveObject>());
+            Destroy(gameObject.GetComponent<PlaceObject>());
 
         }
         if (Input.GetKey(KeyCode.Q))
@@ -34,6 +23,15 @@ public class MoveObject : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             transform.Rotate(Vector3.down * Time.deltaTime * rotateSpeed);
+        }
+    }
+    public void PlaceObjects()
+    {
+        Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 100000f, layer))
+        {
+            transform.position = hit.point;
         }
     }
 }

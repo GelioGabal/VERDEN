@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9183217118650707608}
   - component: {fileID: 8015771045043132662}
   - component: {fileID: 4113578545700775600}
-  - component: {fileID: 6261990507555299698}
+  - component: {fileID: 1368680499742461550}
   m_Layer: 8
   m_Name: Buildtest
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4802314101888234036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.942814, y: 50.369675, z: -65.01897}
+  m_LocalPosition: {x: -0.2955972, y: 47.70874, z: 37.47696}
   m_LocalScale: {x: 4.03, y: 4.168273, z: 4.168273}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6261990507555299698
+--- !u!114 &1368680499742461550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,10 +115,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4802314101888234036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9618d9d500767ad459398fad879d65c6, type: 3}
+  m_Script: {fileID: 11500000, guid: e43fca5ef22ab794b8d7d5530d2b68e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   rotateSpeed: 100

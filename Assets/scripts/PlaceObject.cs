@@ -12,18 +12,18 @@ public class PlaceObject : MonoBehaviour
         PlaceObjects();
         if (Input.GetMouseButtonDown(0))
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 10, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y +2, transform.position.z);
             Destroy(gameObject.GetComponent<PlaceObject>());
 
         }
-        if (Input.GetKey(KeyCode.Q))
+/*        if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
+            transform.Rotate(Vector3. * Time.deltaTime * rotateSpeed);
         }
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(Vector3.down * Time.deltaTime * rotateSpeed);
-        }
+            transform.Rotate(Vector3.right * Time.deltaTime * rotateSpeed);
+        }*/
     }
     public void PlaceObjects()
     {
@@ -32,6 +32,8 @@ public class PlaceObject : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100000f, layer))
         {
             transform.position = hit.point;
+            
+
         }
     }
 }

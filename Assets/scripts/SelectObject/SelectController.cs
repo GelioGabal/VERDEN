@@ -78,7 +78,7 @@ public class SelectController : MonoBehaviour
                 {
                     select.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 }
-                select.transform.localScale = new Vector3(Mathf.Abs(xScale), 1, Mathf.Abs(zScale));
+                select.transform.localScale = new Vector3(Mathf.Abs(xScale), 100, Mathf.Abs(zScale));
 
             }
         }

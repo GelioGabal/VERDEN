@@ -103,7 +103,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 70
   health: 100
-  bullet: {fileID: 1698550787210792669, guid: 6fb51af727c602949a9ab0d43b43f623, type: 3}
+  bullet: {fileID: 2274715145989126201, guid: 6fb51af727c602949a9ab0d43b43f623, type: 3}
 --- !u!1 &4050777785234072927
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,10 +19,17 @@ public class bulletControll : MonoBehaviour
 
 
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (CompareTag("Enemy") || other.CompareTag("Player"))
+        Debug.Log("Я вошел нахой");
+
+        if (other.CompareTag("Enemy") || other.CompareTag("Player"))
         {
+            Debug.Log("Я вошел нахой");
             Attack attack = other.GetComponent<Attack>();
             attack.health -= damage;
             if (attack.health <= 0)
@@ -31,7 +38,7 @@ public class bulletControll : MonoBehaviour
             }
             Transform helthBar = other.transform.GetChild(0).gameObject.transform;
             helthBar.localScale = new Vector3(
-                    helthBar.localScale.x - 0.3f,
+                    helthBar.localScale.x - 0.2f,
                     helthBar.localScale.y,
                     helthBar.localScale.z);
 

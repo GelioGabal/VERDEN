@@ -11,10 +11,10 @@ public class Attack : MonoBehaviour
     private Coroutine _Coroutine = null;
     private void Update()
     {
-        DetectColision();
+        DetectCollision();
     }
 
-    private void DetectColision()
+    private void DetectCollision()
     {
         Collider[] hitCollader = Physics.OverlapSphere(transform.position, radius);
         if (hitCollader.Length == 0 && _Coroutine != null)
@@ -45,8 +45,8 @@ public class Attack : MonoBehaviour
         }
         IEnumerator StartAttack(Collider enemyPos)
         {
-
-            GameObject objectsukably = Instantiate(bullet, transform.GetChild(1).position, Quaternion.identity);
+           // Debug.Log("Я вошел нахой");
+            GameObject objectsukably = Instantiate(bullet, transform.GetChild(1).position, Quaternion.Euler(0, 0, -90));
             objectsukably.GetComponent<bulletControll>().position = enemyPos.transform.position;
             yield return new WaitForSeconds(1f);
             StopCoroutine(_Coroutine);

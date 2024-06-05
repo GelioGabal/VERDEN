@@ -45,10 +45,10 @@ GameObject:
   - component: {fileID: 7043376012643939678}
   - component: {fileID: 3477343158178993356}
   - component: {fileID: -7402551281501568209}
-  - component: {fileID: -8993365920634303081}
+  - component: {fileID: -6045656988359074043}
   m_Layer: 7
-  m_Name: Unit_test
-  m_TagString: Player
+  m_Name: Unit_test 1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e5cea42fa0c583744bb73baf3a9eb43f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   radius: 70
   health: 100
   bullet: {fileID: 2274715145989126201, guid: 6fb51af727c602949a9ab0d43b43f623, type: 3}
---- !u!54 &-8993365920634303081
+--- !u!54 &-6045656988359074043
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -344,7 +344,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.342, z: 0}
-  m_LocalScale: {x: 0.15573, y: 0.15734, z: 1}
+  m_LocalScale: {x: 0.15573, y: 0.15734, z: 1.0608}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5921235067967831200}

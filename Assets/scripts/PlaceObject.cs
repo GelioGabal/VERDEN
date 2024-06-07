@@ -7,9 +7,11 @@ public class PlaceObject : MonoBehaviour
 {
     public LayerMask layer;
     public float rotateSpeed = 100f;
+
     private void Update()
     {
         PlaceObjects();
+        
         if (Input.GetMouseButtonDown(0))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y +2, transform.position.z);
@@ -35,5 +37,6 @@ public class PlaceObject : MonoBehaviour
             
 
         }
+
     }
 }

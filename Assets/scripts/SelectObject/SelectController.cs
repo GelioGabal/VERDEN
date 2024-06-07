@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class SelectController : MonoBehaviour
 {
+    private Animator animator;
+
     public GameObject selectZone;
     private GameObject select;
     public LayerMask mask, BuldMask,UnitMask;
@@ -30,6 +32,7 @@ public class SelectController : MonoBehaviour
                 foreach (var el in Units)
                 {
                     el.GetComponent<NavMeshAgent>().SetDestination(agentTarget.point);
+
                 }
             }
         }
@@ -60,6 +63,8 @@ public class SelectController : MonoBehaviour
             RaycastHit _hitDrag;
             if (Physics.Raycast(ray, out _hitDrag, 1000f, mask))
             {
+
+
                 float xScale = (hit.point.x - _hitDrag.point.x) * -1;
                 float zScale = (hit.point.z - _hitDrag.point.z);
                 if (xScale < 0.0f && zScale < 0.0f)
@@ -84,6 +89,8 @@ public class SelectController : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0) && select)
         {
+
+
             RaycastHit[] hits = Physics.BoxCastAll(
                  select.transform.position,
                  select.transform.localScale,
@@ -97,8 +104,10 @@ public class SelectController : MonoBehaviour
                 Units.Add(el.transform.gameObject);
                 el.transform.GetChild(0).gameObject.SetActive(true);
 
+
             }
             Destroy(select);
+
         }
     }
 

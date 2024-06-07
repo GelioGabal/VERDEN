@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
+    private Animator animator;
     SelectController controller = new SelectController();
     private void Update()
     {
@@ -17,8 +18,16 @@ public class Movement : MonoBehaviour
                 foreach (var el in controller.Units)
                 {
                     el.GetComponent<NavMeshAgent>().SetDestination(agentTarget.point);
+                    //так *****, здесь же должно работать, не?
+                    /*animator = GetComponent<Animator>();
+                    animator.SetInteger("Shoot", 0);
+                    animator.SetInteger("Run", 1);
+
+                    else { animator.SetInteger("Run", 1); }*/
                 }
+                
             }
         }
     }
+
 }

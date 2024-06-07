@@ -1,8 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/model/SOLDIERS/NEMEC+/NEMEC_controller.controller.meta
 guid: 403184cccc6648543b9c4b6bf4d1ef39
+========
+guid: e5cea42fa0c583744bb73baf3a9eb43f
+>>>>>>>> origin/main:Assets/prefab/enemy_test.mat.meta
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 9100000
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

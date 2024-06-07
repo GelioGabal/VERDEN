@@ -6,7 +6,7 @@ using UnityEngine;
 public class bulletControll : MonoBehaviour
 {
     [NonSerialized] public Vector3 position;
-    public float speed = 300f;
+    public float speed = 30f;
     public int damage = 20;
     private void Update()
     {
@@ -38,9 +38,9 @@ public class bulletControll : MonoBehaviour
             }
             Transform helthBar = other.transform.GetChild(0).gameObject.transform;
             helthBar.localScale = new Vector3(
-                    helthBar.localScale.x - 0.2f,
+                    helthBar.localScale.x,
                     helthBar.localScale.y,
-                    helthBar.localScale.z);
+                    helthBar.localScale.z - 0.2f);
 
         }
 

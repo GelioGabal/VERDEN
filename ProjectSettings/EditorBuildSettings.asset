@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Terrain.unity
     guid: e1b60a00b24238c4888ff3477487c249
+  - enabled: 1
+    path: Assets/Scenes/Loose.unity
+    guid: 5ec56e35d4e659349bee13ceb62aabd2
   m_configObjects: {}

@@ -11,6 +11,7 @@ public class Attack : MonoBehaviour
     public GameObject bullet;
     private Coroutine _Coroutine = null;
     private Animator animator;
+    public bool is_dot;
     private void Update()
     {
         DetectCollision();
@@ -37,18 +38,26 @@ public class Attack : MonoBehaviour
                 {
                     GetComponent<NavMeshAgent>().SetDestination(col.transform.position);
                 }
+
                 if (_Coroutine == null)
                 {
+                    
                     _Coroutine = StartCoroutine(StartAttack(col));
-
-                    //переход в состояние стрельбы и обратно
-                    animator = GetComponent<Animator>();
-                    animator.SetInteger("Shoot", 1);
-                    animator.SetInteger("Run", 0);
+                    if (!is_dot)
+                    {
+                        //переход в состояние стрельбы и обратно
+                        animator = GetComponent<Animator>();
+                        animator.SetInteger("Shoot", 1);
+                        animator.SetInteger("Run", 0);
+                    }
                 }
-                else { animator.SetInteger("Shoot", 0); }
 
-            }
+                if (_Coroutine != null && !is_dot)
+                {
+                 animator.SetInteger("Shoot", 0); 
+                }
+
+                }
         }
         IEnumerator StartAttack(Collider enemyPos)
         {

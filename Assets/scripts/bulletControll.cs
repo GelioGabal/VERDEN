@@ -25,11 +25,8 @@ public class bulletControll : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Я вошел нахой");
-
         if (other.CompareTag("Enemy") || other.CompareTag("Player"))
         {
-            Debug.Log("Я вошел нахой");
             Attack attack = other.GetComponent<Attack>();
             attack.health -= damage;
             if (attack.health <= 0)

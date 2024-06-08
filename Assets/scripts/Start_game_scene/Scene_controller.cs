@@ -20,4 +20,10 @@ public class Scene_controller : MonoBehaviour
     {
         
     }
+
+    public void Exit()
+    {
+        Debug.Log("Игра Закончилась идите нахуй");
+        Application.Quit();
+    }
 }

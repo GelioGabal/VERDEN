@@ -24,7 +24,7 @@ public class Attack : MonoBehaviour
         {
             StopCoroutine(_Coroutine);
             _Coroutine = null;
-            if (CompareTag("Enemy"))
+            if (CompareTag("Enemy") && !is_dot)
             {
                 GetComponent<NavMeshAgent>().SetDestination(gameObject.transform.position);
             }
@@ -34,7 +34,7 @@ public class Attack : MonoBehaviour
             if ((gameObject.CompareTag("Player") && col.gameObject.CompareTag("Enemy")) ||
                 (gameObject.CompareTag("Enemy") && col.gameObject.CompareTag("Player")))
             {
-                if (gameObject.CompareTag("Enemy"))
+                if (gameObject.CompareTag("Enemy") && !is_dot)
                 {
                     GetComponent<NavMeshAgent>().SetDestination(col.transform.position);
                 }

@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Victory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private GameObject MainBuildPlayer = null;
+    public GameObject VictoryAlert;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        MainBuildPlayer = GameObject.Find("glav_zdanie");
+        if (MainBuildPlayer == null)
+        {
+            Time.timeScale = 0f;
+            VictoryAlert.SetActive(true);
+            Debug.Log("Main_player");
+        }
     }
 }

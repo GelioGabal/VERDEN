@@ -157,6 +157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nemec_unit Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6592333184122769219, guid: 5183a872ce88c0244aaa65add49d25b1, type: 3}
+      propertyPath: m_Constraints
+      value: 122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

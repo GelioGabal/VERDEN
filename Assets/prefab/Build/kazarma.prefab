@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4001531773190025656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453594751559986608}
+  m_Layer: 8
+  m_Name: spawn-point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453594751559986608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001531773190025656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.164, y: -0.109, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6517253265557374150}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7947971796269860926
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,15 +146,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.55305
+      value: 28.50531
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 118.709724
+      value: 37.709717
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 223.12973
+      value: -10.475291
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalRotation.w
@@ -171,6 +202,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4768609091518306936}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 453594751559986608}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       insertIndex: -1
@@ -178,6 +212,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4179227513348148716}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 759578044868817374}
   m_SourcePrefab: {fileID: 100100000, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
 --- !u!1 &5853061018199858812 stripped
 GameObject:
@@ -216,6 +253,20 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.003, y: 0.001, z: 0.014}
   m_TimeToStationary: 0.5
+--- !u!114 &759578044868817374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853061018199858812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06cc36eec010e647b12fdf8db2e6dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fly_1: {fileID: 544456347324339433, guid: 082f1fc7d9b086c45855672903011df5, type: 3}
+  timeSpawn: 1
 --- !u!4 &6517253265557374150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}

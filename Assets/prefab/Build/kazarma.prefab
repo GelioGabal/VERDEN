@@ -146,15 +146,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.50531
+      value: 517.8854
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.709717
+      value: 158.18971
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.475291
+      value: 342.41464
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}
       propertyPath: m_LocalRotation.w
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fly_1: {fileID: 544456347324339433, guid: 082f1fc7d9b086c45855672903011df5, type: 3}
-  timeSpawn: 1
+  timeSpawn: 10
 --- !u!4 &6517253265557374150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4e0d52b44dd4a3408f4b98c7ed1ec59, type: 3}

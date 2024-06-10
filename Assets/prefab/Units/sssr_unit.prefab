@@ -433,6 +433,7 @@ MonoBehaviour:
   radius: 70
   health: 100
   bullet: {fileID: 2274715145989126201, guid: 6fb51af727c602949a9ab0d43b43f623, type: 3}
+  point: {fileID: 8515109494910211554, guid: 33ed823d1ce636e47ac5e783f742ef2e, type: 3}
   is_dot: 0
 --- !u!195 &1248151027906349624
 NavMeshAgent:

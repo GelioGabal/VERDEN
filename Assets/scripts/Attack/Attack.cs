@@ -9,12 +9,18 @@ public class Attack : MonoBehaviour
     public float radius = 70f;
     public int health = 100;
     public GameObject bullet;
+    public GameObject point;
     private Coroutine _Coroutine = null;
     private Animator animator;
     public bool is_dot;
     private void Update()
     {
+        
         DetectCollision();
+        if (CompareTag("Enemy") && !is_dot)
+        {
+            GetComponent<NavMeshAgent>().SetDestination(point.transform.position);
+        }
     }
 
     private void DetectCollision()

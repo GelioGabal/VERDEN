@@ -146,7 +146,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 727.40076
+      value: 395.90805
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 499.27985
+      value: 286.31256
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -218,6 +218,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1356804692520021500}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2336075918656568368}
   m_SourcePrefab: {fileID: 100100000, guid: 39ee330e3a96c5c4c9e4c9768d22105f, type: 3}
 --- !u!4 &8344927852102402480 stripped
 Transform:
@@ -309,3 +312,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   rotateSpeed: 100
+--- !u!114 &-2336075918656568368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684333195390589706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3e1e0100641af42863bba6a8c48cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 100
+  health: 200
+  bullet: {fileID: 2274715145989126201, guid: 6fb51af727c602949a9ab0d43b43f623, type: 3}
+  point: {fileID: 8515109494910211554, guid: 33ed823d1ce636e47ac5e783f742ef2e, type: 3}
+  is_dot: 1
